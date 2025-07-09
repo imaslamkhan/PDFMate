@@ -52,6 +52,26 @@ class SettingsScreen extends StatelessWidget {
                 () {},
               ),
             ],
+          ), const SizedBox(height: 24),
+          _buildSettingsSection(
+            context,
+            'App Settings',
+            [
+              _buildSettingsTile(
+                context,
+                'Theme',
+                'System Default',
+                Icons.palette,
+                () {},
+              ),
+              _buildSettingsTile(
+                context,
+                'Language',
+                'English',
+                Icons.language,
+                () {},
+              ),
+            ],
           ),
           const SizedBox(height: 24),
           _buildSettingsSection(
